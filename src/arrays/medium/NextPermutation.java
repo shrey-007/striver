@@ -1,5 +1,6 @@
 package arrays.medium;
 
+import java.io.File;
 import java.util.Arrays;
 
 public class NextPermutation {
@@ -42,6 +43,45 @@ public class NextPermutation {
 
     public static void func2(int nums[]){
 
+        //for explaination of this, see the image in this folder itself
+        File file=new File("NextPermutation.jpg");
+
+         int dip=-1;
+
+
+         //find the dip
+        for (int i = nums.length-1; i >=0 ; i--) {
+            if(nums[i]>nums[i-1]){
+                //we have found the dip index
+                dip=i-1;
+                break;
+            }
+        }
+
+        //find the number just greater than nums[dip] on right
+        int justGreaterElement=-1;
+        for (int i = nums.length-1; i >=0 ; i--) {
+            if (nums[i] > nums[dip]) {
+                //since right side of dip is like this=\ toh right se start kro jo pehla number num[dip] se bada hai vahi justGreater hai
+                justGreaterElement=i;
+                break;
+            }
+        }
+
+        //swap dip and justGraeterElement
+        int temp=nums[dip];
+        nums[dip]=nums[justGreaterElement];
+        nums[justGreaterElement]=temp;
+
+        //reverse the right side if dip
+        int start=dip+1;
+        int end= nums.length-1;
+        while(start<end){
+            //swap start and end
+            temp=nums[start];
+            nums[start]=nums[end];
+            nums[end]=temp;
+        }
     }
 
 
