@@ -28,6 +28,9 @@ public class SelectionSort {
         return arr;
 
     }
+    //humne starting se start kra and dekha min element kon hai and usse starting vaale ko swap kra
+    //hum ulta bhi kr skte the
+    //last se start kro and dekho ki max element kon hai and usko last vaale ko swap kra
 
     public static void main(String[] args) {
         int arr[]={2,3,1,7,5};
