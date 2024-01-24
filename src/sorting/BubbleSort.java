@@ -6,6 +6,7 @@ package sorting;
 public class BubbleSort {
     //worst=n2
     //best=n2, it can be n if we optimise the bubble sort taking a flag variable
+    //stable
 
 
     public static int [] func(int arr[]){

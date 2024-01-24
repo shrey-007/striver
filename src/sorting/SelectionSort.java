@@ -1,9 +1,17 @@
 package sorting;
 
 public class SelectionSort {
+    //best,worst=n2
+    //not stable
+
+    //since ith place pr konsa element aayega uske liye apan ye dekte hai ki i se end tak ka smallest element kon hai
+    //toh simply apan ko vo pata krne ke liye i se end tak iterate krna padega
+    //toh bhale hi already sorted array bhi kiu na ho n2 time hi lagega
+
     public static int[] func(int arr[]){
         for (int i = 0; i < arr.length; i++) {
             //find smallest element from ith index to end
+            //maan lo ki current element hi minimum hai, ab yaha se end tak dekho ki isse chota koi aur element hai kya
             int smallestElementIndex=i;
             for (int j = i+1; j < arr.length; j++) {
                 if(arr[j]<arr[smallestElementIndex]){
