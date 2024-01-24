@@ -13,6 +13,10 @@ public class QuickSort {
     //you can improve the worst case by not taking start as pivot element
     //take pivot as random element bw start and end.
 
+    //jab array sort krne ki baat ho toh quicksort is better than merge since it does not use any extra space
+    //but jab linked list sort krna ho toh merge sort is preffered, coz usme random pivot nikaalna dificult hota hai
+
+
 
 
     //   Algorithm=
