@@ -1,5 +1,16 @@
 package arrays.easy;
 
+//similar questions
+/*
+https://leetcode.com/problems/consecutive-characters/description/
+https://leetcode.com/problems/longer-contiguous-segments-of-ones-than-zeros/description/
+
+https://leetcode.com/problems/maximum-enemy-forts-that-can-be-captured/
+https://leetcode.com/problems/max-consecutive-ones-iii/
+https://leetcode.com/problems/length-of-the-longest-alphabetical-continuous-substring/
+*/
+
+
 public class MaximumConsecutiveOnes {
 //    Q=Given a binary array nums, return the maximum number of consecutive 1's in the array.
 
